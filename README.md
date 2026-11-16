@@ -13,7 +13,7 @@
 </p>
 
 <p align="center">
-  <a href="https://github.com/eskiu-lang/font/actions/workflows/ci.yml"><img src="https://github.com/eskiu-lang/font/actions/workflows/ci.yml/badge.svg" alt="CI"></a>
+  <a href="https://github.com/eskiu-packages/font/actions/workflows/ci.yml"><img src="https://github.com/eskiu-packages/font/actions/workflows/ci.yml/badge.svg" alt="CI"></a>
   <img src="https://img.shields.io/badge/version-0.1.0-6448d4" alt="Version 0.1.0">
   <a href="LICENSE"><img src="https://img.shields.io/badge/license-MIT-blue" alt="License: MIT"></a>
 </p>
@@ -32,7 +32,7 @@ kerning, and packs a character set into one texture for text on the GPU.
 - **Text.** Layout with kerning and line breaks, measuring, and drawing into an RGBA image
   with alpha blending.
 - **Atlases.** A set of characters at one size packed into an 8-bit texture with each glyph's
-  rectangle and metrics, ready to upload with [gpu](https://github.com/eskiu-lang/gpu).
+  rectangle and metrics, ready to upload with [gpu](https://github.com/eskiu-packages/gpu).
 
 ## Drawing text
 
@@ -76,7 +76,7 @@ eskiuc run examples/render.esk -- "Hola, Eskiu" 64 hola.pgm
 In an Eskiu package (Eskiu 0.12 or newer):
 
 ```bash
-eskiuc add font --git https://github.com/eskiu-lang/font --rev v0.1.0
+eskiuc add font --git https://github.com/eskiu-packages/font --rev v0.1.0
 ```
 
 ## License
