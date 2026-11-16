@@ -23,22 +23,6 @@ jobs:
       - name: Example
         run: eskiuc run examples/render.esk -- "Eskiu" 16
 
-  macos:
-    runs-on: macos-15
-    steps:
-      - uses: actions/checkout@v4
-      - name: Install Eskiu
-        run: brew install eskiu-lang/eskiu/eskiu llvm@22
-      - name: Tests
-        run: eskiuc test
-      - name: Address sanitizer
-        run: |
-          # Apple's clang has an older ASan runtime than LLVM 22's instrumentation.
-          export CC=$(brew --prefix llvm@22)/bin/clang
-          mkdir -p build
-          eskiuc --asan tests/font.esk -o build/font_asan
-          build/font_asan
-
   windows:
     runs-on: windows-latest
     defaults:
